@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+</head>
+<body>
+    <div id='blocos'>
+<div id="intro">
+    <h1 style="color: white;" onclick="exibirtexto()" id="titulo"></h1>
+</div>
+<section id="colection">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-flex mb-5">
+            <img src="fotos/1.jpg" alt="Foto 1" class="imagem" onclick="exibirFoto('fotos/1.jpg','Legenda da foto 1')" >
+          </div>
+          <div class="col-md-3 d-flex mb-5 mx-auto">
+            <img src="fotos/2.jpg" alt="Foto 2" class="imagem" class="imagem" onclick="exibirFoto('fotos/2.jpg','Legenda da foto 2')">
+          </div>
+          <div class="col-md-3 d-flex mb-5 ">
+            <img src="fotos/3.jpg" alt="Foto 3" class="imagem" onclick="exibirFoto('fotos/3.jpg','Legenda da foto 3')">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 d-flex mb-5 ">
+              <img src="fotos/4.jpg" alt="Foto 1" class="imagem" onclick="exibirFoto('fotos/4.jpg','Legenda da foto 4')">
+            </div>
+            <div class="col-md-3 d-flex mb-5 mx-auto">
+              <img src="fotos/5.jpg" alt="Foto 2" class="imagem" onclick="exibirFoto('fotos/5.jpg','Legenda da foto 5')">
+            </div>
+            <div class="col-md-3 d-flex mb-5 ">
+              <img src="fotos/6.jpg" alt="Foto 3" class="imagem" onclick="exibirFoto('fotos/6.jpg','Legenda da foto 6')">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 d-flex mb-5 ">
+              <img src="fotos/7.jpg" alt="Foto 1" class="imagem" onclick="exibirFoto('fotos/7.jpg','Legenda da foto 7')">
+            </div>
+            <div class="col-md-3 d-flex mb-5 mx-auto">
+              <img src="fotos/8.jpg" alt="Foto 2" class="imagem" onclick="exibirFoto('fotos/8.jpg','Legenda da foto 8')">
+            </div>
+            <div class="col-md-3 d-flex mb-5 ">
+              <img src="fotos/9.jpg" alt="Foto 3" class="imagem" onclick="exibirFoto('fotos/9.jpg','Legenda da foto 9')">
+            </div>
+          </div>
+      </div>
+</section>
+</div>
+<div id="foto-maior">
+  <img src="" id="foto-maior-img">
+  <div class="legenda" id="foto-maior-legenda"></div>
+  <footer style="color: white;"> Feito por Felipe Martins</footer>
+    <script src="index.js"></script>
+    
+   
+</body>
+</html>
+

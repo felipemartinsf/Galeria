@@ -1,0 +1,124 @@
+html{
+    background-color: black;
+}
+body{
+    background-color: black;
+    filter: none;
+}
+#intro{
+    background-color: black;
+    width: 100vw;
+    height: 60rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#colection{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    -webkit-box-shadow:-0px 0px 38px 8px #e5dcdc ;
+    -moz-box-shadow:-0px 0px 38px 8px #e5dcdc ;
+    box-shadow:-0px 0px 38px 8px #e5dcdc ;
+    transition: 0.4s;
+}
+
+img:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
+#secret-text{
+    display: none;
+    top: 0;
+    left: 0;
+    font: 10rem;
+    z-index: 9999;
+    text-align: center;
+    color: rgb(44, 42, 42);
+}
+.clone{
+    display: none;
+    width: 5rem;
+    height: 10rem;
+    position: fixed;
+}
+h1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    font-family: 'Florania';
+    font-size: 5vh;
+}
+h1::after{
+    content: '|';
+    animation: pisca 1s infinite;
+}
+
+#foto-maior {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  #foto-maior .legenda {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  #foto-maior img {
+    max-width: 20%;
+    max-height: 82%;
+    margin-top: 5%;
+  }
+
+  @media screen and (max-width:768px){
+    #foto-maior img {
+        max-width: 80%;
+        max-height: 80%;
+        margin-top: 0;
+    }
+
+        #foto-maior .legenda {
+            color: #fff;
+            font-size: 25px;
+            margin-top: 20px;
+            font-size: 0.8rem;
+          }
+        footer{
+            font-size:0.6rem;
+          }
+        
+  }
+ 
+
+
+@keyframes pisca{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@font-face {
+    font-family: 'Florania';
+    src: url(fontes/Florania\ Trial.otf) format('opentype');
+}
+
